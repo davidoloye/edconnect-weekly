@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <h1>
+            Project Explorer
+        </h1>
+        <h2>
+            One Stop Database for Academic Projects
+        </h2>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="search.html">Projects</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="createproject.html">Submit</a>
+    </nav>
+    <main>
+        <h1>Login</h1>
+        <form action="">
+            <div class="form-group">
+                <label>Email Adress</label>
+                <input type="email" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>">
+                <span class="invalid-feedback"><?php echo $username_err; ?></span>
+            </div> <br>
+
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
+                <span class="invalid-feedback"><?php echo $password_err; ?></span>
+            </div><br>
+
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" value="Submit">
+            </div>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <h1>
+            Project Explorer
+        </h1>
+        <h2>
+            One Stop Database for Academic Projects
+        </h2>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="search.html">Projects</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="createproject.html">Submit</a>
+    </nav>
+    <main>
+        <section>
+            <h1>Search Projects By</h1>
+            <input type="text" name="searchTerm" placeholder="Project Name, Authors, Abstract, Tags ">
+            <select name="searchType" id="searchType">
+                <label for="">SearchBy</label>
+                <option value="name">Name</option>
+                <option value="abstract">Abstract</option>
+                <option value="authors">Authors</option>
+                <option value="abstract">Tags</option>
+            </select>
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" value="Search">
+            </div>
+        </section>
+
+        <section>
+            <h1>Search Result</h1>
+            <h2>Project 1</h2>
+            <ul>
+                <li>Name:Project1</li>
+                <li>Descrption:Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's #
+                    standard dummy text ever since the 1500s,</li>
+                <li>Program:computer science</li>
+                <li>Author:john doe</li>
+                <li>tags:#Asphyxia, #GSW</li>
+                <li>Year:2018</li>
+            </ul>
+        </section>
+    </main>
